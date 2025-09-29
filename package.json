@@ -1,4 +1,23 @@
 {
+  "name": "cse341_team-05_group-project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tympush/cse341_Team-05_Group-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tympush/cse341_Team-05_Group-Project/issues"
+  },
+  "homepage": "https://github.com/tympush/cse341_Team-05_Group-Project#readme",
+  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
