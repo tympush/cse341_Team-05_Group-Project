@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 const validation = require("../middleware/validate");
 const { isAuthenticated } = require("../middleware/authenticate");
 
-const landmarksController = require('../controllers/landmarks');
+const landmarksController = require("../controllers/landmarks");
 
 
 router.put("/:id", isAuthenticated, validation.validateLandmark, landmarksController.updateLandmark);
