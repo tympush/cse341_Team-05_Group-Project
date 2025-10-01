@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Nigeria",
+        "iso_code": "NG",
+        "capital": "Abuja",
+        "region": "Africa",
+        "subregion": "Western Africa",
+        "population": 223804632,
+        "area_km2": 923768,
+        "currency": {
+            "name": "Naira",
+            "code": "NGN",
+            "symbol": "₦"
+        },
+        "languages": ["English", "Hausa", "Yoruba", "Igbo"],
+        "timezones": ["UTC+01:00"],
+        "calling_code": "+234",
+        "flag_url": "https://flagcdn.com/ng.svg"
+    }
+]
