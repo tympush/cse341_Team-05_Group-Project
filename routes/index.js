@@ -6,8 +6,8 @@ const router = require("express").Router();
 
 //router.use("/", require("./"));
 //router.use("/", require("./"));
-//router.use("/", require("./"));
-//router.use("/", require("./"));
+router.use("/countries", require("./countries"));
+router.use("/landmarks", require("./landmarks"));
 
 router.get("/login", passport.authenticate("github", (req, res) => {}));
 

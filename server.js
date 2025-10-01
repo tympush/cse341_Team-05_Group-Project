@@ -25,7 +25,7 @@ server
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     next();
   })
-  .use(cors({ method: ['GET','POST','DELETE','UPDATE','PUT','PATCH'] }))
+  .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'] }))
   .use(cors({ origin: '*' }))
   .use("/", require("./routes/index"));
 
@@ -43,7 +43,7 @@ server
 passport.serializeUser((user, done) => {
   done(null, user);
 });
-passport.deserializeUser((obj, done) => {
+passport.deserializeUser((user, done) => {
   done(null, user);
 });
 

@@ -1,0 +1,51 @@
+### Update country
+PUT http://localhost:8080/countries/68dda182ba923aa1896d2de3 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "JapanTest",
+    "iso_code": "JP",
+    "capital": "Tokyo",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 123294513,
+    "area_km2": 377975,
+    "currency": {
+        "name": "Yen",
+        "code": "JPY",
+        "symbol": "¥"
+    },
+    "languages": ["Japanese"],
+    "timezones": ["UTC+09:00"],
+    "calling_code": "+81",
+    "flag_url": "https://flagcdn.com/jp.svg"
+}
+
+### Delete country
+DELETE http://localhost:8080/countries/68dda182ba923aa1896d2de3
+
+
+
+### Update landmark
+PUT http://localhost:8080/landmarks/68dda88e8c66150995ddb766 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Tokyo Tower Test",
+    "city": "Tokyo",
+    "country": "Japan",
+    "continent": "Asia",
+    "type": "Observation Tower",
+    "year_built": 1958,
+    "height_m": 333,
+    "visitors_per_year": 3000000,
+    "coordinates": {
+        "latitude": 35.6586,
+        "longitude": 139.7454
+    },
+    "description": "A famous landmark in Tokyo...",
+    "image_url": "https://example.com/tokyo-tower.jpg"
+}
+
+### Delete landmark
+DELETE http://localhost:8080/landmarks/68dda88e8c66150995ddb766
