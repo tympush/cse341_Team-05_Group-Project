@@ -16,5 +16,347 @@
         "timezones": ["UTC+01:00"],
         "calling_code": "+234",
         "flag_url": "https://flagcdn.com/ng.svg"
+    },
+    {
+        "name": "United States",
+        "iso_code": "US",
+        "capital": "Washington, D.C.",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 339996563,
+        "area_km2": 9833517,
+        "currency": {
+            "name": "United States Dollar",
+            "code": "USD",
+            "symbol": "$"
+        },
+        "languages": ["English"],
+        "timezones": ["UTC−05:00", "UTC−06:00", "UTC−07:00", "UTC−08:00", "UTC−09:00", "UTC−10:00", "UTC+10:00", "UTC+12:00"],
+        "calling_code": "+1",
+        "flag_url": "https://flagcdn.com/us.svg"
+    },
+    {
+        "name": "Brazil",
+        "iso_code": "BR",
+        "capital": "Brasília",
+        "region": "Americas",
+        "subregion": "South America",
+        "population": 216422446,
+        "area_km2": 8515767,
+        "currency": {
+            "name": "Brazilian Real",
+            "code": "BRL",
+            "symbol": "R$"
+        },
+        "languages": ["Portuguese"],
+        "timezones": ["UTC−05:00", "UTC−04:00", "UTC−03:00", "UTC−02:00"],
+        "calling_code": "+55",
+        "flag_url": "https://flagcdn.com/br.svg"
+    },
+    {
+        "name": "Germany",
+        "iso_code": "DE",
+        "capital": "Berlin",
+        "region": "Europe",
+        "subregion": "Western Europe",
+        "population": 83294633,
+        "area_km2": 357022,
+        "currency": {
+            "name": "Euro",
+            "code": "EUR",
+            "symbol": "€"
+        },
+        "languages": ["German"],
+        "timezones": ["UTC+01:00"],
+        "calling_code": "+49",
+        "flag_url": "https://flagcdn.com/de.svg"
+    },
+    {
+        "name": "India",
+        "iso_code": "IN",
+        "capital": "New Delhi",
+        "region": "Asia",
+        "subregion": "Southern Asia",
+        "population": 1428627663,
+        "area_km2": 3287263,
+        "currency": {
+            "name": "Indian Rupee",
+            "code": "INR",
+            "symbol": "₹"
+        },
+        "languages": ["Hindi", "English"],
+        "timezones": ["UTC+05:30"],
+        "calling_code": "+91",
+        "flag_url": "https://flagcdn.com/in.svg"
+    },
+    {
+        "name": "China",
+        "iso_code": "CN",
+        "capital": "Beijing",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "population": 1411750000,
+        "area_km2": 9596961,
+        "currency": {
+            "name": "Renminbi Yuan",
+            "code": "CNY",
+            "symbol": "¥"
+        },
+        "languages": ["Mandarin Chinese"],
+        "timezones": ["UTC+08:00"],
+        "calling_code": "+86",
+        "flag_url": "https://flagcdn.com/cn.svg"
+    },
+    {
+        "name": "South Africa",
+        "iso_code": "ZA",
+        "capital": "Pretoria",
+        "region": "Africa",
+        "subregion": "Southern Africa",
+        "population": 60414495,
+        "area_km2": 1221037,
+        "currency": {
+            "name": "Rand",
+            "code": "ZAR",
+            "symbol": "R"
+        },
+        "languages": ["Zulu", "Xhosa", "Afrikaans", "English"],
+        "timezones": ["UTC+02:00"],
+        "calling_code": "+27",
+        "flag_url": "https://flagcdn.com/za.svg"
+    },
+    {
+        "name": "Canada",
+        "iso_code": "CA",
+        "capital": "Ottawa",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 38929902,
+        "area_km2": 9984670,
+        "currency": {
+            "name": "Canadian Dollar",
+            "code": "CAD",
+            "symbol": "$"
+        },
+        "languages": ["English", "French"],
+        "timezones": ["UTC−03:30", "UTC−04:00", "UTC−05:00", "UTC−06:00", "UTC−07:00", "UTC−08:00"],
+        "calling_code": "+1",
+        "flag_url": "https://flagcdn.com/ca.svg"
+    },
+    {
+        "name": "Australia",
+        "iso_code": "AU",
+        "capital": "Canberra",
+        "region": "Oceania",
+        "subregion": "Australia and New Zealand",
+        "population": 26640982,
+        "area_km2": 7692024,
+        "currency": {
+            "name": "Australian Dollar",
+            "code": "AUD",
+            "symbol": "$"
+        },
+        "languages": ["English"],
+        "timezones": ["UTC+08:00", "UTC+09:30", "UTC+10:00"],
+        "calling_code": "+61",
+        "flag_url": "https://flagcdn.com/au.svg"
+    },
+    {
+        "name": "Japan",
+        "iso_code": "JP",
+        "capital": "Tokyo",
+        "region": "Asia",
+        "subregion": "Eastern Asia",
+        "population": 123294513,
+        "area_km2": 377975,
+        "currency": {
+            "name": "Japanese Yen",
+            "code": "JPY",
+            "symbol": "¥"
+        },
+        "languages": ["Japanese"],
+        "timezones": ["UTC+09:00"],
+        "calling_code": "+81",
+        "flag_url": "https://flagcdn.com/jp.svg"
+    },
+    {
+        "name": "France",
+        "iso_code": "FR",
+        "capital": "Paris",
+        "region": "Europe",
+        "subregion": "Western Europe",
+        "population": 65273511,
+        "area_km2": 551695,
+        "currency": {
+            "name": "Euro",
+            "code": "EUR",
+            "symbol": "€"
+        },
+        "languages": ["French"],
+        "timezones": ["UTC+01:00"],
+        "calling_code": "+33",
+        "flag_url": "https://flagcdn.com/fr.svg"
+    },
+    {
+        "name": "Italy",
+        "iso_code": "IT",
+        "capital": "Rome",
+        "region": "Europe",
+        "subregion": "Southern Europe",
+        "population": 58870762,
+        "area_km2": 301340,
+        "currency": {
+            "name": "Euro",
+            "code": "EUR",
+            "symbol": "€"
+        },
+        "languages": ["Italian"],
+        "timezones": ["UTC+01:00"],
+        "calling_code": "+39",
+        "flag_url": "https://flagcdn.com/it.svg"
+    },
+    {
+        "name": "United Kingdom",
+        "iso_code": "GB",
+        "capital": "London",
+        "region": "Europe",
+        "subregion": "Northern Europe",
+        "population": 67508936,
+        "area_km2": 243610,
+        "currency": {
+            "name": "Pound Sterling",
+            "code": "GBP",
+            "symbol": "£"
+        },
+        "languages": ["English"],
+        "timezones": ["UTC+00:00"],
+        "calling_code": "+44",
+        "flag_url": "https://flagcdn.com/gb.svg"
+    },
+    {
+        "name": "Mexico",
+        "iso_code": "MX",
+        "capital": "Mexico City",
+        "region": "Americas",
+        "subregion": "Central America",
+        "population": 128455567,
+        "area_km2": 1964375,
+        "currency": {
+            "name": "Mexican Peso",
+            "code": "MXN",
+            "symbol": "$"
+        },
+        "languages": ["Spanish"],
+        "timezones": ["UTC−08:00", "UTC−07:00", "UTC−06:00"],
+        "calling_code": "+52",
+        "flag_url": "https://flagcdn.com/mx.svg"
+    },
+    {
+        "name": "Russia",
+        "iso_code": "RU",
+        "capital": "Moscow",
+        "region": "Europe/Asia",
+        "subregion": "Eastern Europe/Northern Asia",
+        "population": 144444359,
+        "area_km2": 17098242,
+        "currency": {
+            "name": "Russian Ruble",
+            "code": "RUB",
+            "symbol": "₽"
+        },
+        "languages": ["Russian"],
+        "timezones": ["UTC+02:00", "UTC+03:00", "UTC+04:00", "UTC+05:00", "UTC+06:00", "UTC+07:00", "UTC+08:00", "UTC+09:00", "UTC+10:00", "UTC+11:00", "UTC+12:00"],
+        "calling_code": "+7",
+        "flag_url": "https://flagcdn.com/ru.svg"
+    },
+    {
+        "name": "Saudi Arabia",
+        "iso_code": "SA",
+        "capital": "Riyadh",
+        "region": "Asia",
+        "subregion": "Western Asia",
+        "population": 36947025,
+        "area_km2": 2149690,
+        "currency": {
+            "name": "Saudi Riyal",
+            "code": "SAR",
+            "symbol": "﷼"
+        },
+        "languages": ["Arabic"],
+        "timezones": ["UTC+03:00"],
+        "calling_code": "+966",
+        "flag_url": "https://flagcdn.com/sa.svg"
+    },
+    {
+        "name": "Argentina",
+        "iso_code": "AR",
+        "capital": "Buenos Aires",
+        "region": "Americas",
+        "subregion": "South America",
+        "population": 45773822,
+        "area_km2": 2780400,
+        "currency": {
+            "name": "Argentine Peso",
+            "code": "ARS",
+            "symbol": "$"
+        },
+        "languages": ["Spanish"],
+        "timezones": ["UTC−03:00"],
+        "calling_code": "+54",
+        "flag_url": "https://flagcdn.com/ar.svg"
+    },
+    {
+        "name": "Egypt",
+        "iso_code": "EG",
+        "capital": "Cairo",
+        "region": "Africa",
+        "subregion": "Northern Africa",
+        "population": 112716598,
+        "area_km2": 1002450,
+        "currency": {
+            "name": "Egyptian Pound",
+            "code": "EGP",
+            "symbol": "£"
+        },
+        "languages": ["Arabic"],
+        "timezones": ["UTC+02:00"],
+        "calling_code": "+20",
+        "flag_url": "https://flagcdn.com/eg.svg"
+    },
+    {
+        "name": "Turkey",
+        "iso_code": "TR",
+        "capital": "Ankara",
+        "region": "Asia/Europe",
+        "subregion": "Western Asia/Southeastern Europe",
+        "population": 85341241,
+        "area_km2": 783562,
+        "currency": {
+            "name": "Turkish Lira",
+            "code": "TRY",
+            "symbol": "₺"
+        },
+        "languages": ["Turkish"],
+        "timezones": ["UTC+03:00"],
+        "calling_code": "+90",
+        "flag_url": "https://flagcdn.com/tr.svg"
+    },
+    {
+        "name": "Indonesia",
+        "iso_code": "ID",
+        "capital": "Jakarta",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia",
+        "population": 277534122,
+        "area_km2": 1904569,
+        "currency": {
+            "name": "Indonesian Rupiah",
+            "code": "IDR",
+            "symbol": "Rp"
+        },
+        "languages": ["Indonesian"],
+        "timezones": ["UTC+07:00", "UTC+08:00", "UTC+09:00"],
+        "calling_code": "+62",
+        "flag_url": "https://flagcdn.com/id.svg"
     }
 ]
