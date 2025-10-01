@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
-//const mongodb = require("./db/connect");
+const mongodb = require("./db/connect");
 const passport = require("passport");
 const session = require("express-session");
 const GitHubStrategy = require("passport-github2").Strategy;
@@ -65,7 +65,7 @@ process.on("uncaughtException", (err, origin) => {
 
 
 
-/*mongodb.initDb((err) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
@@ -73,4 +73,4 @@ process.on("uncaughtException", (err, origin) => {
       console.log(`Connected to DB and listening on ${port}`);
     });
   }
-});*/
+});
