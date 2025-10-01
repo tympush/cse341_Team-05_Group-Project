@@ -1,6 +1,6 @@
 const validator = require('../helpers/validator');
 
-const saveCountry = (req, res, next) => {
+const validateCountry = (req, res, next) => {
     const validationRules = {
         name: 'required|string',
         iso_code: 'required|string|size:2',
@@ -32,6 +32,36 @@ const saveCountry = (req, res, next) => {
     });
 };
 
+const validateLandmark = (req, res, next) => {
+    const validationRule = {
+        name: "required|string",
+        city: "required|string",
+        country: "required|string",
+        continent: "required|string",
+        type: "required|string",
+        year_built: "required|integer",
+        height_m: "required|integer",
+        visitors_per_year: "required|integer",
+        coordinates: "required",
+        "coordinates.latitude": "required|numeric",
+        "coordinates.longitude": "required|numeric",
+        description: "required|string",
+        image_url: "required"
+  };
+  validator(req.body, validationRule, {}, (err, status) => {
+    if (!status) {
+      res.status(400).send({
+        success: false,
+        message: "Validation failed",
+        data: err
+      });
+    } else {
+      next();
+    }
+  });
+};
+
 module.exports = {
-    saveCountry
+    validateCountry,
+    validateLandmark
 };
