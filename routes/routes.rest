@@ -1,0 +1,31 @@
+@id_here = replace_me
+
+### GET ALL CITIES
+GET http://localhost:8080/cities
+
+### GET ONE CITY BY ID
+GET http://localhost:8080/cities/{{id_here}}
+
+
+### CREATE A NEW CITY
+POST http://localhost:8080/cities
+Content-Type: application/json
+
+{
+"name": "Barcelona",
+"iso_code": "ES-BCN",
+"capital": "Barcelona",
+"region": "Catalonia",
+"subregion": "Eastern Spain",
+"population": 1620343,
+"area_km2": 101,
+"currency": {
+    "name": "Euro",
+    "code": "EUR",
+    "symbol": "€"
+},
+"languages": ["Catalan", "Spanish"],
+"timezones": ["CET"],
+"calling_code": "+34",
+"flag_url": "https://upload.wikimedia.org/wikipedia/en/4/47/Flag_of_Barcelona.svg"
+}
