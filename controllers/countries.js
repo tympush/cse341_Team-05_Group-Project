@@ -2,6 +2,7 @@ const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res) => {
+        //#swagger.tags=["Countries"]
     try {
         const result = await mongodb
             .getDb()
@@ -19,6 +20,7 @@ const getAll = async (req, res) => {
 };
 
 const getOne = async (req, res) => {
+        //#swagger.tags=["Countries"]
     try {
         const countryId = req.params.id;
 
@@ -44,6 +46,7 @@ const getOne = async (req, res) => {
 };
 
 const createCountry = async (req, res) => {
+        //#swagger.tags=["Countries"]
     try {
         const country = {
             name: req.body.name,
