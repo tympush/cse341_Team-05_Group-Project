@@ -16,5 +16,4 @@ router.put("/:id", isAuthenticated, validation.validateLandmark, landmarksContro
 
 router.delete("/:id", isAuthenticated, landmarksController.deleteLandmark);
 
-
 module.exports = router;
