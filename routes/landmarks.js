@@ -6,11 +6,11 @@ const { isAuthenticated } = require("../middleware/authenticate");
 
 const landmarksController = require("../controllers/landmarks");
 
-router.get('/', landmarksController.getAll);
+router.get("/", landmarksController.getAll);
 
-router.get('/:id', landmarksController.getOne);
+router.get("/:id", landmarksController.getOne);
 
-router.post('/', isAuthenticated, validation.validateLandmark, landmarksController.createLandmark);
+router.post("/", isAuthenticated, validation.validateLandmark, landmarksController.createLandmark);
 
 router.put("/:id", isAuthenticated, validation.validateLandmark, landmarksController.updateLandmark);
 
