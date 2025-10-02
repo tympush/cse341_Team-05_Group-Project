@@ -12,7 +12,7 @@
             "latitude": 48.8584,
             "longitude": 2.2945
         },
-        "description": "Iconic iron tower built for the 1889 World's Fair.",
+        "description": "Iconic iron tower built for the 1889 World"s Fair.",
         "image_url": "https://example.com/images/eiffel.jpg"
     },
     {
@@ -161,7 +161,7 @@
     },
     {
         "name": "Petra",
-        "city": "Ma'an",
+        "city": "Ma"an",
         "country": "Jordan",
         "continent": "Asia",
         "type": "Archaeological Site",

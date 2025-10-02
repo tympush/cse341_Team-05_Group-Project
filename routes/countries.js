@@ -1,15 +1,21 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-
-const countriesController = require('../controllers/countries');
 
 const validation = require("../middleware/validate");
 const { isAuthenticated } = require("../middleware/authenticate");
 
-router.get('/', countriesController.getAll);
+const countriesController = require("../controllers/countries");
 
-router.get('/:id', countriesController.getOne);
 
-router.post('/', isAuthenticated, validation.saveCountry, countriesController.createCountry);
+router.get("/", countriesController.getAll);
+
+router.get("/:id", countriesController.getOne);
+
+router.post("/", isAuthenticated, validation.validateCountry, countriesController.createCountry);
+
+router.put("/:id", isAuthenticated, validation.validateCountry, countriesController.updateCountry);
+
+router.delete("/:id", isAuthenticated, countriesController.deleteCountry);
+
 
 module.exports = router;
