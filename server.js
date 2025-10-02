@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongodb = require("./db/connect");
@@ -25,8 +25,8 @@ server
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     next();
   })
-  .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'] }))
-  .use(cors({ origin: '*' }))
+  .use(cors({ method: ["GET","POST","DELETE","UPDATE","PUT","PATCH"] }))
+  .use(cors({ origin: "*" }))
   .use("/", require("./routes/index"));
 
 
@@ -47,13 +47,13 @@ passport.deserializeUser((user, done) => {
   done(null, user);
 });
 
-server.get('/', (req, res) => {res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.username}` : "Logged out")});
+server.get("/", (req, res) => {res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.username}` : "Logged out")});
 
-server.get('/github/callback', passport.authenticate('github', { 
-  failureRedirect: '/api-docs', session: false}),
+server.get("/github/callback", passport.authenticate("github", { 
+  failureRedirect: "/api-docs", session: false}),
   (req, res) => {
     req.session.user = req.user;
-    res.redirect('/'); 
+    res.redirect("/"); 
   }
 );
 

@@ -1,0 +1,306 @@
+[
+    {
+        "name": "Eiffel Tower",
+        "city": "Paris",
+        "country": "France",
+        "continent": "Europe",
+        "type": "Monument",
+        "year_built": 1889,
+        "height_m": 300,
+        "visitors_per_year": 7000000,
+        "coordinates": {
+            "latitude": 48.8584,
+            "longitude": 2.2945
+        },
+        "description": "Iconic iron tower built for the 1889 World"s Fair.",
+        "image_url": "https://example.com/images/eiffel.jpg"
+    },
+    {
+        "name": "Statue of Liberty",
+        "city": "New York",
+        "country": "United States",
+        "continent": "North America",
+        "type": "Monument",
+        "year_built": 1886,
+        "height_m": 93,
+        "visitors_per_year": 4300000,
+        "coordinates": {
+            "latitude": 40.6892,
+            "longitude": -74.0445
+        },
+        "description": "Gift from France, symbolizing freedom and democracy.",
+        "image_url": "https://example.com/images/liberty.jpg"
+    },
+    {
+        "name": "Great Wall of China",
+        "city": "Beijing",
+        "country": "China",
+        "continent": "Asia",
+        "type": "Fortification",
+        "year_built": -700,
+        "height_m": 7,
+        "visitors_per_year": 10000000,
+        "coordinates": {
+            "latitude": 40.4319,
+            "longitude": 116.5704
+        },
+        "description": "Ancient wall built to protect Chinese states and empires.",
+        "image_url": "https://example.com/images/greatwall.jpg"
+    },
+    {
+        "name": "Taj Mahal",
+        "city": "Agra",
+        "country": "India",
+        "continent": "Asia",
+        "type": "Mausoleum",
+        "year_built": 1648,
+        "height_m": 73,
+        "visitors_per_year": 8000000,
+        "coordinates": {
+            "latitude": 27.1751,
+            "longitude": 78.0421
+        },
+        "description": "White marble mausoleum built by Mughal emperor Shah Jahan.",
+        "image_url": "https://example.com/images/tajmahal.jpg"
+    },
+    {
+        "name": "Christ the Redeemer",
+        "city": "Rio de Janeiro",
+        "country": "Brazil",
+        "continent": "South America",
+        "type": "Statue",
+        "year_built": 1931,
+        "height_m": 30,
+        "visitors_per_year": 2000000,
+        "coordinates": {
+            "latitude": -22.9519,
+            "longitude": -43.2105
+        },
+        "description": "Giant statue of Jesus overlooking Rio de Janeiro.",
+        "image_url": "https://example.com/images/christ.jpg"
+    },
+    {
+        "name": "Colosseum",
+        "city": "Rome",
+        "country": "Italy",
+        "continent": "Europe",
+        "type": "Amphitheater",
+        "year_built": 80,
+        "height_m": 48,
+        "visitors_per_year": 7600000,
+        "coordinates": {
+            "latitude": 41.8902,
+            "longitude": 12.4922
+        },
+        "description": "Ancient Roman amphitheater used for gladiatorial contests.",
+        "image_url": "https://example.com/images/colosseum.jpg"
+    },
+    {
+        "name": "Big Ben",
+        "city": "London",
+        "country": "United Kingdom",
+        "continent": "Europe",
+        "type": "Clock Tower",
+        "year_built": 1859,
+        "height_m": 96,
+        "visitors_per_year": 3000000,
+        "coordinates": {
+            "latitude": 51.5007,
+            "longitude": -0.1246
+        },
+        "description": "Famous clock tower attached to the Palace of Westminster.",
+        "image_url": "https://example.com/images/bigben.jpg"
+    },
+    {
+        "name": "Sydney Opera House",
+        "city": "Sydney",
+        "country": "Australia",
+        "continent": "Oceania",
+        "type": "Opera House",
+        "year_built": 1973,
+        "height_m": 65,
+        "visitors_per_year": 8700000,
+        "coordinates": {
+            "latitude": -33.8568,
+            "longitude": 151.2153
+        },
+        "description": "Iconic performing arts center on Sydney Harbour.",
+        "image_url": "https://example.com/images/opera.jpg"
+    },
+    {
+        "name": "Machu Picchu",
+        "city": "Cusco Region",
+        "country": "Peru",
+        "continent": "South America",
+        "type": "Archaeological Site",
+        "year_built": 1450,
+        "height_m": 2430,
+        "visitors_per_year": 1500000,
+        "coordinates": {
+            "latitude": -13.1631,
+            "longitude": -72.5450
+        },
+        "description": "Inca citadel set high in the Andes Mountains.",
+        "image_url": "https://example.com/images/machu.jpg"
+    },
+    {
+        "name": "Pyramids of Giza",
+        "city": "Giza",
+        "country": "Egypt",
+        "continent": "Africa",
+        "type": "Pyramid",
+        "year_built": -2560,
+        "height_m": 146,
+        "visitors_per_year": 14000000,
+        "coordinates": {
+            "latitude": 29.9792,
+            "longitude": 31.1342
+        },
+        "description": "Ancient pyramids built as tombs for pharaohs.",
+        "image_url": "https://example.com/images/pyramids.jpg"
+    },
+    {
+        "name": "Petra",
+        "city": "Ma"an",
+        "country": "Jordan",
+        "continent": "Asia",
+        "type": "Archaeological Site",
+        "year_built": -300,
+        "height_m": 40,
+        "visitors_per_year": 1000000,
+        "coordinates": {
+            "latitude": 30.3285,
+            "longitude": 35.4444
+        },
+        "description": "Famous rock-cut architecture and water conduit system.",
+        "image_url": "https://example.com/images/petra.jpg"
+    },
+    {
+        "name": "Angkor Wat",
+        "city": "Siem Reap",
+        "country": "Cambodia",
+        "continent": "Asia",
+        "type": "Temple",
+        "year_built": 1150,
+        "height_m": 65,
+        "visitors_per_year": 2500000,
+        "coordinates": {
+            "latitude": 13.4125,
+            "longitude": 103.8670
+        },
+        "description": "Largest religious monument in the world.",
+        "image_url": "https://example.com/images/angkor.jpg"
+    },
+    {
+        "name": "Burj Khalifa",
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "continent": "Asia",
+        "type": "Skyscraper",
+        "year_built": 2010,
+        "height_m": 828,
+        "visitors_per_year": 1700000,
+        "coordinates": {
+            "latitude": 25.1972,
+            "longitude": 55.2744
+        },
+        "description": "Tallest building in the world.",
+        "image_url": "https://example.com/images/burj.jpg"
+    },
+    {
+        "name": "Golden Gate Bridge",
+        "city": "San Francisco",
+        "country": "United States",
+        "continent": "North America",
+        "type": "Bridge",
+        "year_built": 1937,
+        "height_m": 227,
+        "visitors_per_year": 10000000,
+        "coordinates": {
+            "latitude": 37.8199,
+            "longitude": -122.4783
+        },
+        "description": "Famous suspension bridge in San Francisco Bay.",
+        "image_url": "https://example.com/images/golden_gate.jpg"
+    },
+    {
+        "name": "Acropolis of Athens",
+        "city": "Athens",
+        "country": "Greece",
+        "continent": "Europe",
+        "type": "Citadel",
+        "year_built": -447,
+        "height_m": 156,
+        "visitors_per_year": 3500000,
+        "coordinates": {
+            "latitude": 37.9715,
+            "longitude": 23.7267
+        },
+        "description": "Ancient citadel containing the Parthenon temple.",
+        "image_url": "https://example.com/images/acropolis.jpg"
+    },
+    {
+        "name": "Moai Statues",
+        "city": "Easter Island",
+        "country": "Chile",
+        "continent": "South America",
+        "type": "Stone Statues",
+        "year_built": 1250,
+        "height_m": 10,
+        "visitors_per_year": 100000,
+        "coordinates": {
+            "latitude": -27.1127,
+            "longitude": -109.3497
+        },
+        "description": "Monolithic human figures carved by the Rapa Nui people.",
+        "image_url": "https://example.com/images/moai.jpg"
+    },
+    {
+        "name": "Stonehenge",
+        "city": "Wiltshire",
+        "country": "United Kingdom",
+        "continent": "Europe",
+        "type": "Prehistoric Monument",
+        "year_built": -2500,
+        "height_m": 7,
+        "visitors_per_year": 1300000,
+        "coordinates": {
+            "latitude": 51.1789,
+            "longitude": -1.8262
+        },
+        "description": "Prehistoric stone circle in southern England.",
+        "image_url": "https://example.com/images/stonehenge.jpg"
+    },
+    {
+        "name": "Sagrada Familia",
+        "city": "Barcelona",
+        "country": "Spain",
+        "continent": "Europe",
+        "type": "Basilica",
+        "year_built": 1882,
+        "height_m": 172,
+        "visitors_per_year": 4500000,
+        "coordinates": {
+            "latitude": 41.4036,
+            "longitude": 2.1744
+        },
+        "description": "Large unfinished Roman Catholic basilica designed by Gaudí.",
+        "image_url": "https://example.com/images/sagrada.jpg"
+    },
+    {
+        "name": "Mount Rushmore",
+        "city": "South Dakota",
+        "country": "United States",
+        "continent": "North America",
+        "type": "Sculpture",
+        "year_built": 1941,
+        "height_m": 18,
+        "visitors_per_year": 2000000,
+        "coordinates": {
+            "latitude": 43.8791,
+            "longitude": -103.4591
+        },
+        "description": "Monumental sculptures of four U.S. presidents.",
+        "image_url": "https://example.com/images/rushmore.jpg"
+    }
+]

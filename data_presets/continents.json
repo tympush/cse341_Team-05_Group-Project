@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Africa",
+        "area_km2": 30370000,
+        "population": 1420000000,
+        "number_of_countries": 54,
+        "largest_country": "Algeria",
+        "largest_city": "Lagos",
+        "languages_major": ["Arabic", "English", "French", "Swahili", "Hausa", "Amharic"],
+        "timezone_range": ["UTC-01:00", "UTC+04:00"],
+        "description": "Africa is the second-largest continent, rich in natural resources, diverse cultures, and ancient civilizations.",
+        "image_url": "https://example.com/images/africa.jpg"
+    },
+    {
+        "name": "Asia",
+        "area_km2": 44579000,
+        "population": 4700000000,
+        "number_of_countries": 49,
+        "largest_country": "Russia",
+        "largest_city": "Tokyo",
+        "languages_major": ["Mandarin", "Hindi", "Arabic", "Russian", "Japanese"],
+        "timezone_range": ["UTC+02:00", "UTC+12:00"],
+        "description": "Asia is the largest continent, home to the majority of the world’s population and great civilizations.",
+        "image_url": "https://example.com/images/asia.jpg"
+    },
+    {
+        "name": "Europe",
+        "area_km2": 10180000,
+        "population": 750000000,
+        "number_of_countries": 44,
+        "largest_country": "Russia",
+        "largest_city": "Moscow",
+        "languages_major": ["English", "French", "German", "Spanish", "Italian", "Russian"],
+        "timezone_range": ["UTC-01:00", "UTC+05:00"],
+        "description": "Europe is known for its cultural heritage, modern economies, and historical influence across the world.",
+        "image_url": "https://example.com/images/europe.jpg"
+    },
+    {
+        "name": "North America",
+        "area_km2": 24709000,
+        "population": 600000000,
+        "number_of_countries": 23,
+        "largest_country": "Canada",
+        "largest_city": "Mexico City",
+        "languages_major": ["English", "Spanish", "French"],
+        "timezone_range": ["UTC-10:00", "UTC-03:00"],
+        "description": "North America is home to diverse cultures and economies, stretching from the Arctic to Central America.",
+        "image_url": "https://example.com/images/northamerica.jpg"
+    },
+    {
+        "name": "South America",
+        "area_km2": 17840000,
+        "population": 430000000,
+        "number_of_countries": 12,
+        "largest_country": "Brazil",
+        "largest_city": "São Paulo",
+        "languages_major": ["Spanish", "Portuguese"],
+        "timezone_range": ["UTC-05:00", "UTC-02:00"],
+        "description": "South America is known for the Amazon rainforest, Andes mountains, and rich cultural traditions.",
+        "image_url": "https://example.com/images/southamerica.jpg"
+    },
+    {
+        "name": "Australia",
+        "area_km2": 8600000,
+        "population": 43000000,
+        "number_of_countries": 14,
+        "largest_country": "Australia",
+        "largest_city": "Sydney",
+        "languages_major": ["English"],
+        "timezone_range": ["UTC+08:00", "UTC+11:00"],
+        "description": "Also called Oceania, this continent includes Australia, New Zealand, and Pacific island nations.",
+        "image_url": "https://example.com/images/australia.jpg"
+    },
+    {
+        "name": "Antarctica",
+        "area_km2": 14000000,
+        "population": 5000,
+        "number_of_countries": 0,
+        "largest_country": null,
+        "largest_city": null,
+        "languages_major": ["English", "Russian"],
+        "timezone_range": ["Varies"],
+        "description": "Antarctica is the coldest continent, covered by ice sheets, with research stations but no permanent residents.",
+        "image_url": "https://example.com/images/antarctica.jpg"
+    }
+]

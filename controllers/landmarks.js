@@ -2,7 +2,7 @@ const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
 const updateLandmark = async (req, res) => {
-    //#swagger.tags=['Landmarks']
+    //#swagger.tags=["Landmarks"]
     try {
     const landmarkId = new ObjectId(req.params.id);
     const landmarkOne = {
@@ -40,7 +40,7 @@ const updateLandmark = async (req, res) => {
 };
 
 const deleteLandmark = async (req, res) => {
-    //#swagger.tags=['Landmarks']
+    //#swagger.tags=["Landmarks"]
     try {
     const landmarkId = new ObjectId(req.params.id);
     const response = await mongodb.getDb().db()

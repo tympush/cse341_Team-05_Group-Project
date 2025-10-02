@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Paris",
+        "country": "France",
+        "continent": "Europe",
+        "population": 2148000,
+        "area_km2": 105.4,
+        "timezone": "UTC+01:00",
+        "coordinates": {
+            "latitude": 48.8566,
+            "longitude": 2.3522
+        },
+        "description": "Capital city of France, known for art, fashion, and the Eiffel Tower.",
+        "image_url": "https://example.com/images/paris.jpg"
+    },
+    {
+        "name": "New York City",
+        "country": "United States",
+        "continent": "North America",
+        "population": 8419600,
+        "area_km2": 783.8,
+        "timezone": "UTC-05:00",
+        "coordinates": {
+            "latitude": 40.7128,
+            "longitude": -74.0060
+        },
+        "description": "Largest U.S. city, famous for Times Square, Broadway, and Wall Street.",
+        "image_url": "https://example.com/images/nyc.jpg"
+    },
+    {
+        "name": "Tokyo",
+        "country": "Japan",
+        "continent": "Asia",
+        "population": 13960000,
+        "area_km2": 2194,
+        "timezone": "UTC+09:00",
+        "coordinates": {
+            "latitude": 35.6895,
+            "longitude": 139.6917
+        },
+        "description": "Japan’s capital, blending ultramodern skyscrapers with historic temples.",
+        "image_url": "https://example.com/images/tokyo.jpg"
+    },
+    {
+        "name": "London",
+        "country": "United Kingdom",
+        "continent": "Europe",
+        "population": 8982000,
+        "area_km2": 1572,
+        "timezone": "UTC+00:00",
+        "coordinates": {
+            "latitude": 51.5074,
+            "longitude": -0.1278
+        },
+        "description": "UK capital, known for Big Ben, the London Eye, and cultural diversity.",
+        "image_url": "https://example.com/images/london.jpg"
+    },
+    {
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "continent": "South America",
+        "population": 6748000,
+        "area_km2": 1182,
+        "timezone": "UTC-03:00",
+        "coordinates": {
+            "latitude": -22.9068,
+            "longitude": -43.1729
+        },
+        "description": "Brazilian coastal city, famous for Christ the Redeemer and Copacabana Beach.",
+        "image_url": "https://example.com/images/rio.jpg"
+    },
+    {
+        "name": "Beijing",
+        "country": "China",
+        "continent": "Asia",
+        "population": 21540000,
+        "area_km2": 16410,
+        "timezone": "UTC+08:00",
+        "coordinates": {
+            "latitude": 39.9042,
+            "longitude": 116.4074
+        },
+        "description": "China’s capital, rich with history including the Forbidden City.",
+        "image_url": "https://example.com/images/beijing.jpg"
+    },
+    {
+        "name": "Moscow",
+        "country": "Russia",
+        "continent": "Europe",
+        "population": 12690000,
+        "area_km2": 2561,
+        "timezone": "UTC+03:00",
+        "coordinates": {
+            "latitude": 55.7558,
+            "longitude": 37.6173
+        },
+        "description": "Capital of Russia, famous for Red Square and the Kremlin.",
+        "image_url": "https://example.com/images/moscow.jpg"
+    },
+    {
+        "name": "Cairo",
+        "country": "Egypt",
+        "continent": "Africa",
+        "population": 9900000,
+        "area_km2": 606,
+        "timezone": "UTC+02:00",
+        "coordinates": {
+            "latitude": 30.0444,
+            "longitude": 31.2357
+        },
+        "description": "Egypt’s capital, near the Pyramids of Giza and the Nile River.",
+        "image_url": "https://example.com/images/cairo.jpg"
+    },
+    {
+        "name": "Sydney",
+        "country": "Australia",
+        "continent": "Oceania",
+        "population": 5312000,
+        "area_km2": 12368,
+        "timezone": "UTC+10:00",
+        "coordinates": {
+            "latitude": -33.8688,
+            "longitude": 151.2093
+        },
+        "description": "Australia’s largest city, home to the Opera House and Harbour Bridge.",
+        "image_url": "https://example.com/images/sydney.jpg"
+    },
+    {
+        "name": "Dubai",
+        "country": "United Arab Emirates",
+        "continent": "Asia",
+        "population": 3331000,
+        "area_km2": 4114,
+        "timezone": "UTC+04:00",
+        "coordinates": {
+            "latitude": 25.276987,
+            "longitude": 55.296249
+        },
+        "description": "Modern city known for skyscrapers including the Burj Khalifa.",
+        "image_url": "https://example.com/images/dubai.jpg"
+    },
+    {
+        "name": "Los Angeles",
+        "country": "United States",
+        "continent": "North America",
+        "population": 3895000,
+        "area_km2": 1302,
+        "timezone": "UTC-08:00",
+        "coordinates": {
+            "latitude": 34.0522,
+            "longitude": -118.2437
+        },
+        "description": "Entertainment capital, home to Hollywood and sunny beaches.",
+        "image_url": "https://example.com/images/la.jpg"
+    },
+    {
+        "name": "Berlin",
+        "country": "Germany",
+        "continent": "Europe",
+        "population": 3769000,
+        "area_km2": 891.8,
+        "timezone": "UTC+01:00",
+        "coordinates": {
+            "latitude": 52.5200,
+            "longitude": 13.4050
+        },
+        "description": "Germany’s capital, known for its history and vibrant culture.",
+        "image_url": "https://example.com/images/berlin.jpg"
+    },
+    {
+        "name": "Mexico City",
+        "country": "Mexico",
+        "continent": "North America",
+        "population": 9200000,
+        "area_km2": 1485,
+        "timezone": "UTC-06:00",
+        "coordinates": {
+            "latitude": 19.4326,
+            "longitude": -99.1332
+        },
+        "description": "Capital of Mexico, famous for Aztec history and rich culture.",
+        "image_url": "https://example.com/images/mexico_city.jpg"
+    },
+    {
+        "name": "Seoul",
+        "country": "South Korea",
+        "continent": "Asia",
+        "population": 9776000,
+        "area_km2": 605,
+        "timezone": "UTC+09:00",
+        "coordinates": {
+            "latitude": 37.5665,
+            "longitude": 126.9780
+        },
+        "description": "Vibrant capital of South Korea, blending tradition and modern tech.",
+        "image_url": "https://example.com/images/seoul.jpg"
+    },
+    {
+        "name": "Rome",
+        "country": "Italy",
+        "continent": "Europe",
+        "population": 2873000,
+        "area_km2": 1285,
+        "timezone": "UTC+01:00",
+        "coordinates": {
+            "latitude": 41.9028,
+            "longitude": 12.4964
+        },
+        "description": "Historic city with landmarks like the Colosseum and Vatican City.",
+        "image_url": "https://example.com/images/rome.jpg"
+    },
+    {
+        "name": "Istanbul",
+        "country": "Turkey",
+        "continent": "Europe/Asia",
+        "population": 15460000,
+        "area_km2": 5343,
+        "timezone": "UTC+03:00",
+        "coordinates": {
+            "latitude": 41.0082,
+            "longitude": 28.9784
+        },
+        "description": "City bridging Europe and Asia, with the Hagia Sophia and Bosphorus.",
+        "image_url": "https://example.com/images/istanbul.jpg"
+    },
+    {
+        "name": "Bangkok",
+        "country": "Thailand",
+        "continent": "Asia",
+        "population": 10539000,
+        "area_km2": 1568.7,
+        "timezone": "UTC+07:00",
+        "coordinates": {
+            "latitude": 13.7563,
+            "longitude": 100.5018
+        },
+        "description": "Thailand’s capital, known for temples, nightlife, and street food.",
+        "image_url": "https://example.com/images/bangkok.jpg"
+    },
+    {
+        "name": "Toronto",
+        "country": "Canada",
+        "continent": "North America",
+        "population": 2732000,
+        "area_km2": 630.2,
+        "timezone": "UTC-05:00",
+        "coordinates": {
+            "latitude": 43.651070,
+            "longitude": -79.347015
+        },
+        "description": "Canada’s largest city, known for CN Tower and cultural diversity.",
+        "image_url": "https://example.com/images/toronto.jpg"
+    },
+    {
+        "name": "Buenos Aires",
+        "country": "Argentina",
+        "continent": "South America",
+        "population": 2890000,
+        "area_km2": 203,
+        "timezone": "UTC-03:00",
+        "coordinates": {
+            "latitude": -34.6037,
+            "longitude": -58.3816
+        },
+        "description": "Capital of Argentina, famous for tango, steak, and European-style architecture.",
+        "image_url": "https://example.com/images/buenosaires.jpg"
+    },
+    {
+        "name": "Cape Town",
+        "country": "South Africa",
+        "continent": "Africa",
+        "population": 4337000,
+        "area_km2": 2460,
+        "timezone": "UTC+02:00",
+        "coordinates": {
+            "latitude": -33.9249,
+            "longitude": 18.4241
+        },
+        "description": "Coastal city under Table Mountain, known for natural beauty and diversity.",
+        "image_url": "https://example.com/images/capetown.jpg"
+    }
+]
