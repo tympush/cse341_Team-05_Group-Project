@@ -10,7 +10,7 @@ router.get('/', landmarksController.getAll);
 
 router.get('/:id', landmarksController.getOne);
 
-router.post('/', isAuthenticated, validation.saveLandmark, landmarksController.createLandmark);
+router.post('/', isAuthenticated, validation.validateLandmark, landmarksController.createLandmark);
 
 router.put("/:id", isAuthenticated, validation.validateLandmark, landmarksController.updateLandmark);
 
