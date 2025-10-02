@@ -92,7 +92,7 @@ const updateLandmark = async (req, res) => {
 					description: req.body.description,
 					image_url: req.body.image_url
 			};
-			const response = await mongodb.getDb().db()
+			const response = await mongodb.getDb().db("geography_db")
 					.collection("landmarks")
 					.updateOne({ _id: landmarkId }, { $set: landmarkOne });
 			if (response.matchedCount === 0) {
@@ -112,7 +112,7 @@ const deleteLandmark = async (req, res) => {
 	//#swagger.tags=["Landmarks"]
 	try {
 			const landmarkId = new ObjectId(req.params.id);
-			const response = await mongodb.getDb().db()
+			const response = await mongodb.getDb().db("geography_db")
 					.collection("landmarks")
 					.deleteOne({ _id: landmarkId });
 			if (response.deletedCount === 0) {
