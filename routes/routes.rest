@@ -1,31 +1,57 @@
 @id_here = replace_me
 
-### GET ALL CITIES
-GET http://localhost:8080/cities
+### GET ALL COUNTRIES
+GET http://localhost:8080/countries
 
-### GET ONE CITY BY ID
-GET http://localhost:8080/cities/{{id_here}}
+### GET ONE COUNTRIES BY ID
+GET http://localhost:8080/countries/68dda182ba923aa1896d2ddb
 
-
-### CREATE A NEW CITY
-POST http://localhost:8080/cities
+### CREATE A NEW COUNTRY
+POST http://localhost:8080/countries
 Content-Type: application/json
 
 {
-"name": "Barcelona",
-"iso_code": "ES-BCN",
-"capital": "Barcelona",
-"region": "Catalonia",
-"subregion": "Eastern Spain",
-"population": 1620343,
-"area_km2": 101,
+"name": "Spain",
+"iso_code": "ES",
+"capital": "Madrid",
+"region": "Europe",
+"subregion": "Southern Europe",
+"population": 47450795,
+"area_km2": 505990,
 "currency": {
     "name": "Euro",
     "code": "EUR",
     "symbol": "€"
 },
-"languages": ["Catalan", "Spanish"],
-"timezones": ["CET"],
+"languages": ["Spanish", "Catalan", "Basque", "Galician"],
+"timezones": ["UTC+01:00"],
 "calling_code": "+34",
-"flag_url": "https://upload.wikimedia.org/wikipedia/en/4/47/Flag_of_Barcelona.svg"
+"flag_url": "https://flagcdn.com/es.svg"
+}
+
+### GET ALL LANDMARKS
+GET http://localhost:8080/landmarks
+
+### GET ONE LANDMARK BY ID
+GET http://localhost:8080/landmarks/68dda18dba923aa1896d2df0
+
+### CREATE A NEW LANDMARK
+POST http://localhost:8080/landmarks
+Content-Type: application/json
+
+{
+"name": "Cerro Fitz Roy",
+"city": "El Chaltén",
+"country": "Argentina",
+"continent": "South America",
+"type": "Mountain",
+"year_built": null,
+"height_m": 3405,
+"visitors_per_year": 120000,
+"coordinates": {
+    "latitude": -49.2717,
+    "longitude": -73.0354
+},
+"description": "Iconic peak in Patagonia known for its dramatic granite spires and challenging climbing routes.",
+"image_url": "https://example.com/images/fitzroy.jpg"
 }

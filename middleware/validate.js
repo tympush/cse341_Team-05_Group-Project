@@ -32,6 +32,37 @@ const saveCountry = (req, res, next) => {
     });
 };
 
+const saveLandmark = (req, res, next) => {
+    const validationRules = {
+        name: 'required|string',
+        city: 'required|string',
+        country: 'required|string',
+        continent: 'required|string',
+        type: 'required|string',
+        year_built: 'required|integer|min:0',
+        height_m: 'required|numeric|min:0',
+        visitorsperyear: 'required|integer|min:0',
+        coordinates: {
+            latitude: 'required|numeric',
+            longitude: 'required|numeric',
+        },
+        description: 'required|string',
+        image_url: 'required|url'
+    };
+
+    validator(req.body, validationRules, {}, (err, status) => {
+        if (!status) {
+            return res.status(412).json({
+                success: false,
+                message: 'Validation failed',
+                data: err
+            });
+        }
+        next();
+    });
+};
+
 module.exports = {
-    saveCountry
+    saveCountry,
+    saveLandmark
 };
