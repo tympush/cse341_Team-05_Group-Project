@@ -4,7 +4,7 @@
 GET http://localhost:8080/countries
 
 ### GET ONE COUNTRIES BY ID
-GET http://localhost:8080/countries/68dda182ba923aa1896d2ddb
+GET http://localhost:8080/countries/{{id_here}}
 
 ### CREATE A NEW COUNTRY
 POST http://localhost:8080/countries
@@ -33,7 +33,7 @@ Content-Type: application/json
 GET http://localhost:8080/landmarks
 
 ### GET ONE LANDMARK BY ID
-GET http://localhost:8080/landmarks/68dda18dba923aa1896d2df0
+GET http://localhost:8080/landmarks/{{id_here}}
 
 ### CREATE A NEW LANDMARK
 POST http://localhost:8080/landmarks
@@ -54,4 +54,61 @@ Content-Type: application/json
 },
 "description": "Iconic peak in Patagonia known for its dramatic granite spires and challenging climbing routes.",
 "image_url": "https://example.com/images/fitzroy.jpg"
+}
+
+### GET ALL CITIES
+GET http://localhost:8080/cities
+
+### GET ONE CITIES BY ID
+GET http://localhost:8080/cities/{{id_here}}
+
+### CREATE A CITY
+POST http://localhost:8080/cities
+Content-Type: application/json
+
+{
+"name": "King's Landing",
+"country": "Westeros",
+"continent": "Essos (fictional)",
+"population": 500000,
+"area_km2": 150.0,
+"timezone": "UTC+00:00",
+"coordinates": {
+"latitude": 42.6396,
+"longitude": -5.9855
+},
+"description": "Capital of the Seven Kingdoms in the fictional continent of Westeros, known for the Red Keep, the Great Sept of Baelor, and its bustling port on Blackwater Bay.",
+"image_url": "https://example.com/images/kings_landing.jpg"
+}
+
+### GET ALL CONTINENTS
+GET http://localhost:8080/continents
+
+### GET ONE CONTINENTS BY ID
+GET http://localhost:8080/continents/{{id_here}}
+
+### CREATE A CONTINENT
+POST http://localhost:8080/continents
+Content-Type: application/json
+
+{
+"_id": "68dda17aba923aa1896d2dda",
+"name": "Essos",
+"area_km2": 12000000,
+"population": 60000000,
+"number_of_countries": 14,
+"largest_country": "The Dothraki Sea",
+"largest_city": "Volantis",
+"languages_major": [
+    "High Valyrian",
+    "Low Valyrian",
+    "Dothraki",
+    "Ghiscari"
+],
+"timezone_range": [
+    "UTC+02:00",
+    "UTC+06:00"
+],
+"description": "Essos is a vast continent east of Westeros in the world of Game of Thrones, known for its free cities, Dothraki plains, and the ancient civilizations that shaped the known world.",
+"image_url": "https://example.com/images/essos.jpg"
 }
