@@ -4,9 +4,9 @@ const router = require("express").Router();
 
 router.use("/", require("./swagger"));
 
-//router.use("/continents", require("./continents"));
+router.use("/continents", require("./continents"));
 router.use("/countries", require("./countries"));
-//router.use("/cities", require("./cities"));
+router.use("/cities", require("./cities"));
 router.use("/landmarks", require("./landmarks"));
 
 router.get("/login", passport.authenticate("github", (req, res) => {}));

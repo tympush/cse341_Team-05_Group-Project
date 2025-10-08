@@ -106,7 +106,7 @@ const updateCountry = async (req, res) => {
         calling_code: req.body.calling_code,
         flag_url: req.body.flag_url
     };
-    const response = await mongodb.getDb().db()
+    const response = await mongodb.getDb().db("geography_db")
       .collection("countries")
       .updateOne({ _id: countryId }, { $set: countryOne });
 
@@ -130,7 +130,7 @@ const deleteCountry = async (req, res) => {
     //#swagger.tags=["Countries"]
     try {
     const countryId = new ObjectId(req.params.id);
-    const response = await mongodb.getDb().db().collection("countries").deleteOne({ _id: countryId });
+    const response = await mongodb.getDb().db("geography_db").collection("countries").deleteOne({ _id: countryId });
 
     if (response.deletedCount === 0) {
       return res.status(404).json({ message: "Country not found" });

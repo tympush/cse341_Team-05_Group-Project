@@ -5,8 +5,8 @@ const doc = {
         title: "Geography API",
         description: "This API is intended to retrieve data about locations around the world for educational purposes.",
     },
-    host: "localhost:8080",
-    schemes: ["http", "https"], 
+    host: "cse341-team-05-group-project.onrender.com",
+    schemes: ["https"], 
 };
 
 const outputFile = "./swagger.json";
