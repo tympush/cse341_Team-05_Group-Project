@@ -13,4 +13,8 @@ router.get("/:id", continentsController.getOne);
 
 router.post("/", isAuthenticated, validation.validateContinent, continentsController.createContinent);
 
+router.put("/:id", isAuthenticated, validation.validateContinent, continentsController.updateContinent);
+
+router.delete("/:id", isAuthenticated, continentsController.deleteContinent);
+
 module.exports = router;

@@ -92,7 +92,6 @@ POST http://localhost:8080/continents
 Content-Type: application/json
 
 {
-"_id": "68dda17aba923aa1896d2dda",
 "name": "Essos",
 "area_km2": 12000000,
 "population": 60000000,

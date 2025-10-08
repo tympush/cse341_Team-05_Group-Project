@@ -43,7 +43,7 @@ server
 passport.serializeUser((user, done) => {
   done(null, user);
 });
-passport.deserializeUser((obj, done) => {
+passport.deserializeUser((user, done) => {
   done(null, user);
 });
 
