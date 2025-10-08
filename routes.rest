@@ -49,3 +49,50 @@ content-type: application/json
 
 ### Delete landmark
 DELETE http://localhost:8080/landmarks/68dda88e8c66150995ddb766
+
+### Update continent
+PUT http://localhost:8080/continents/68e67024a6af0204628d6015 HTTP/1.1
+content-type: application/json
+
+{
+"name": "Antartica Test",
+"area_km2": 14000000,
+"population": 5000,
+"number_of_countries": 0,
+"largest_country": "test",
+"largest_city": "test",
+"languages_major": [
+    "English",
+    "Russian"
+],
+"timezone_range": [
+    "Varies"
+],
+"description": "Antarctica is the coldest continent, covered by ice sheets, with research stations but no permanent residents.",
+"image_url": "https://example.com/images/antarctica.jpg"
+}
+
+### Delete continent
+DELETE http://localhost:8080/continents/68e67024a6af0204628d6015
+
+### Update city
+PUT http://localhost:8080/cities/68dda163ba923aa1896d2dd0 HTTP/1.1
+content-type: application/json
+
+{
+"name": "Cape Town",
+"country": "South Africa",
+"continent": "Africa",
+"population": 4337000,
+"area_km2": 2460,
+"timezone": "UTC+02:00",
+"coordinates": {
+"latitude": -33.9249,
+"longitude": 18.4241
+},
+"description": "Coastal city under Table Mountain, known for natural beauty and diversity.",
+"image_url": "https://example.com/images/capetown.jpg"
+}
+
+### Delete city
+DELETE http://localhost:8080/cities/68dda163ba923aa1896d2dd0

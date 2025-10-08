@@ -13,4 +13,8 @@ router.get("/:id", citiesController.getOne);
 
 router.post("/", isAuthenticated, validation.validateCity, citiesController.createCity);
 
+router.put("/:id", isAuthenticated, validation.validateCity, citiesController.updateCity);
+
+router.delete("/:id", isAuthenticated, citiesController.deleteCity);
+
 module.exports = router;
