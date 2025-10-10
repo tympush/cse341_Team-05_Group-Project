@@ -114,11 +114,12 @@ const updateCountry = async (req, res) => {
       return res.status(404).json({ message: "Country not found" });
     }
 
-    if (response.modifiedCount === 0) {
-      return res.status(200).json({ message: "No changes made" });
-    }
+        if (response.modifiedCount === 0) {
+            return res.status(200).json({ message: "No changes made" });
+        }
 
-    res.status(200).json({ message: "Country updated successfully" });
+        // Successful update - no content
+        res.status(204).end();
 
   } catch (error) {
     console.error(error);
