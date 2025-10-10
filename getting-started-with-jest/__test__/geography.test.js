@@ -14,6 +14,7 @@ beforeAll(async () => {
 describe("GEOGRAPHY API Endpoints", () => {
   let createdId;
 
+  //countries
   test("GET /countries - should return all countries", async () => {
     const res = await request(app).get("/countries");
     expect(res.statusCode).toBe(200);
@@ -38,6 +39,39 @@ describe("GEOGRAPHY API Endpoints", () => {
 
   test("DELETE /countries/:id - should delete a country", async () => {
     const res = await request(app).delete(`/countries/${createdId}`);
+    expect(res.statusCode).toBe(200);
+  });
+
+  //continents
+  test("GET /continents - should return all continents", async () => {
+    const res = await request(app).get("/continents");
+    expect(res.statusCode).toBe(200);
+  });
+
+  test("GET /continents/:id - should return one continent", async () => {
+    const res = await request(app).get(`/continents/${createdId}`);
+    expect(res.statusCode).toBe(200);
+  });
+
+  //cities
+  test("GET /cities - should return all cities", async () => {
+    const res = await request(app).get("/cities");
+    expect(res.statusCode).toBe(200);
+  });
+
+  test("GET /cities/:id - should return one city", async () => {
+    const res = await request(app).get(`/cities/${createdId}`);
+    expect(res.statusCode).toBe(200);
+  });
+
+  //landmarks
+  test("GET /landmarks - should return all landmarks", async () => {
+    const res = await request(app).get("/landmarks");
+    expect(res.statusCode).toBe(200);
+  });
+
+  test("GET /landmarks/:id - should return one landmark", async () => {
+    const res = await request(app).get(`/landmarks/${createdId}`);
     expect(res.statusCode).toBe(200);
   });
 });
