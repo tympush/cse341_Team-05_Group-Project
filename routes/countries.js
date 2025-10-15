@@ -9,9 +9,9 @@ const countriesController = require("../controllers/countries");
 
 router.get("/", countriesController.getAll);
 
-router.get("/name/:name", countriesController.getContry);
-
 router.get("/:id", countriesController.getOne);
+
+router.get("/name/:name", countriesController.getContry);
 
 router.post("/", isAuthenticated, validation.validateCountry, countriesController.createCountry);
 

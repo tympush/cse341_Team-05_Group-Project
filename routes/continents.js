@@ -9,9 +9,9 @@ const continentsController = require("../controllers/continents");
 
 router.get("/", continentsController.getAll);
 
-router.get("/name/:name", continentsController.getContinent);
-
 router.get("/:id", continentsController.getOne);
+
+router.get("/name/:name", continentsController.getContinent);
 
 router.post("/", isAuthenticated, validation.validateContinent, continentsController.createContinent);
 
