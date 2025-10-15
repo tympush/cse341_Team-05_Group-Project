@@ -19,6 +19,31 @@ const getAll = async (req, res) => {
     }
 };
 
+const getCity = async (req, res) => {
+  //#swagger.tags=["Cities"]
+  try {
+    const name = req.params.name; // take 'berlin' from URL like /cities/name/berlin
+
+    // Directly search by the 'name' field — no ObjectId check here
+    const city = await mongodb
+      .getDb()
+      .db("geography_db")
+      .collection("cities")
+      .find({ name: { $regex: name, $options: "i" } })
+      .toArray();
+
+    if (!city) {
+      return res.status(404).json({ error: "City not found" });
+    }
+
+    res.status(200).json(city);
+  } catch (err) {
+    console.error("Error fetching city:", err);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+
 const getOne = async (req, res) => {
     //#swagger.tags=["Cities"]
     try {
@@ -143,6 +168,7 @@ const deleteCity = async (req, res) => {
 module.exports = {
     getAll,
     getOne,
+    getCity,
     createCity,
     updateCity,
     deleteCity
