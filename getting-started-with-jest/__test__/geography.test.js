@@ -32,6 +32,12 @@ describe("GEOGRAPHY API Endpoints", () => {
     expect(res.statusCode).toBe(200);
   });
 
+  test("GET /countries/name/:name - should return country by name", async () => {
+    const res = await request(app).get("/countries/name/Testland");
+    expect(res.statusCode).toBe(200);
+    expect(Array.isArray(res.body)).toBe(true);
+  });
+
   test("PUT /countries/:id - should update a country", async () => {
     const res = await request(app).put(`/countries/${createdId}`).send({ population: 99999 });
     expect(res.statusCode).toBe(204);
@@ -53,6 +59,12 @@ describe("GEOGRAPHY API Endpoints", () => {
     expect(res.statusCode).toBe(200);
   });
 
+  test("GET /continents/name/:name - should return continent by name", async () => {
+    const res = await request(app).get("/continents/name/Africa");
+    expect(res.statusCode).toBe(200);
+    expect(Array.isArray(res.body)).toBe(true);
+  });
+
   //cities
   test("GET /cities - should return all cities", async () => {
     const res = await request(app).get("/cities");
@@ -64,6 +76,12 @@ describe("GEOGRAPHY API Endpoints", () => {
     expect(res.statusCode).toBe(200);
   });
 
+  test("GET /cities/name/:name - should return city by name", async () => {
+    const res = await request(app).get("/cities/name/Tokyo");
+    expect(res.statusCode).toBe(200);
+    expect(Array.isArray(res.body)).toBe(true);
+  });
+
   //landmarks
   test("GET /landmarks - should return all landmarks", async () => {
     const res = await request(app).get("/landmarks");
@@ -73,5 +91,11 @@ describe("GEOGRAPHY API Endpoints", () => {
   test("GET /landmarks/:id - should return one landmark", async () => {
     const res = await request(app).get(`/landmarks/${createdId}`);
     expect(res.statusCode).toBe(200);
+  });
+
+  test("GET /landmarks/name/:name - should return landmark by name", async () => {
+    const res = await request(app).get("/landmarks/name/Tokyo Tower");
+    expect(res.statusCode).toBe(200);
+    expect(Array.isArray(res.body)).toBe(true);
   });
 });
