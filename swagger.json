@@ -5,43 +5,12 @@
     "description": "This API is intended to retrieve data about locations around the world for educational purposes.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-team-05-group-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
-    "/login": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/logout": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/continents/": {
       "get": {
         "tags": [
