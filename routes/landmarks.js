@@ -8,6 +8,8 @@ const landmarksController = require("../controllers/landmarks");
 
 router.get("/", landmarksController.getAll);
 
+router.get("/name/:name", landmarksController.getCity);
+
 router.get("/:id", landmarksController.getOne);
 
 router.post("/", isAuthenticated, validation.validateLandmark, landmarksController.createLandmark);

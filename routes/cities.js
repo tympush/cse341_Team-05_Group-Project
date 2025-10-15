@@ -10,6 +10,7 @@ const citiesController = require("../controllers/cities");
 router.get("/", citiesController.getAll);
 
 router.get("/:id", citiesController.getOne);
+router.get("/name/:name", citiesController.getCity);
 
 router.post("/", isAuthenticated, validation.validateCity, citiesController.createCity);
 

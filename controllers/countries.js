@@ -19,6 +19,31 @@ const getAll = async (req, res) => {
     }
 };
 
+const getContry = async (req, res) => {
+  //#swagger.tags=["Countries"]
+  try {
+    const name = req.params.name; // take 'berlin' from URL like /cities/name/berlin
+
+    // Directly search by the 'name' field — no ObjectId check here
+    const country = await mongodb
+      .getDb()
+      .db("geography_db")
+      .collection("countries")
+      .find({ name: { $regex: name, $options: "i" } })
+      .toArray();
+
+    if (!country) {
+      return res.status(404).json({ error: "Country not found" });
+    }
+
+    res.status(200).json(country);
+  } catch (err) {
+    console.error("Error fetching country:", err);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+
 const getOne = async (req, res) => {
         //#swagger.tags=["Countries"]
     try {
@@ -148,6 +173,7 @@ const deleteCountry = async (req, res) => {
 
 module.exports = {
     getAll, 
+    getContry,
     getOne, 
     createCountry, 
     updateCountry, 

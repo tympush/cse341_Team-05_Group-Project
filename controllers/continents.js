@@ -19,6 +19,31 @@ const getAll = async (req, res) => {
     }
 };
 
+const getContinent = async (req, res) => {
+  //#swagger.tags=["Continents"]
+  try {
+    const name = req.params.name; // take 'berlin' from URL like /cities/name/berlin
+
+    // Directly search by the 'name' field — no ObjectId check here
+    const continent = await mongodb
+      .getDb()
+      .db("geography_db")
+      .collection("continents")
+      .find({ name: { $regex: name, $options: "i" } })
+      .toArray();
+
+    if (!continent) {
+      return res.status(404).json({ error: "Continent not found" });
+    }
+
+    res.status(200).json(continent);
+  } catch (err) {
+    console.error("Error fetching continent:", err);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+
 const getOne = async (req, res) => {
     //#swagger.tags=["Continents"]
     try {
@@ -138,6 +163,7 @@ const deleteContinent = async (req, res) => {
 
 module.exports = {
     getAll,
+    getContinent,
     getOne,
     createContinent,
     updateContinent,
